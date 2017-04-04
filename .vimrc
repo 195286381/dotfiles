@@ -28,10 +28,12 @@ set number " 显示行号
 " set cursorcolumn " 设置当前列高亮
 """"""""""""""""
 "设置字体
-set guifont=Source\ Code\ Pro\ Bold\ 11
-" 高搜索
+"set guifont=Source\ Code\ Pro\ Bold\ 11
+" 高亮搜索
 set hls
 
+autocmd InsertLeave * se nocul  " 用浅色高亮当前行
+autocmd InsertEnter * se cul    " 用浅色高亮当前行
 """"""""""""""""
 " 设置缩进
 """"""""""""""""
@@ -230,6 +232,10 @@ let g:ycm_autoclose_preview_window_after_completion=0
 let g:ycm_complete_in_comments = 0
 " 配置 Smart Air bar
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+	let g:airline_left_sep = '▶'
+	let g:airline_right_sep = '◀'
 " >>>>>>>>>>
 " YCM 补全
 
