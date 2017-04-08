@@ -24,6 +24,7 @@ set laststatus=2
 " filetype off
 syntax on " 设置语法高亮
 set number " 显示行号
+set so=7
 " set cursorline " 设置当前行高亮
 " set cursorcolumn " 设置当前列高亮
 """"""""""""""""
